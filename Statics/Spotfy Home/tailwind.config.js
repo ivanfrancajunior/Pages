@@ -12,10 +12,10 @@ module.exports = {
         'purple-main':'#2d46b9',
         'green-main':'#1ed760'
       },
-      backgroundImage: {
-        'spotify-theme': "url('../src/img/bursts.png')",
-        'spotify-theme-mobile': "url('../src/img/burst-mobile.png')"
-      },
+      backgroundImage: theme =>({
+        'spotify-theme': "url('..src/img/bursts.svg')",
+        'spotify-theme-mobile':"url('..src/img/burst-mobile.svg')"
+      }),
       backgroundSize:{
         '175%':'175%',
         '195%': '195%'
