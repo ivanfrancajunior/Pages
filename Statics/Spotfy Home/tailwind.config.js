@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       spacing:{
-        '14' : '3.5rem',
+        '14': '3.5rem',
         '125px':'125px'
       },
       colors:{
@@ -12,10 +12,10 @@ module.exports = {
         'purple-main':'#2d46b9',
         'green-main':'#1ed760'
       },
-      backgroundImage: theme =>({
-        'spotfy-theme':'url("/assets/bursts.svg")',
-        'spotfy-theme-mobile':'url("/assets/bursts-mobile.svg")',
-      }),
+      backgroundImage: {
+        'spotify-theme': "url('../src/img/bursts.png')",
+        'spotify-theme-mobile': "url('../src/img/burst-mobile.png')"
+      },
       backgroundSize:{
         '175%':'175%',
         '195%': '195%'
