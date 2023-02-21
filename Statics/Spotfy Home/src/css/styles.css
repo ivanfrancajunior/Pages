@@ -679,7 +679,7 @@ video {
 }
 
 .bg-spotify-theme-mobile {
-  background-image: url('..src/img/burst-mobile.svg');
+  background-image: url('../img/burst-mobile.svg');
 }
 
 .bg-195\% {
@@ -854,7 +854,7 @@ video {
   }
 
   .md\:bg-spotify-theme {
-    background-image: url('..src/img/bursts.svg');
+    background-image: url('../img/bursts.svg');
   }
 
   .md\:bg-175\% {
