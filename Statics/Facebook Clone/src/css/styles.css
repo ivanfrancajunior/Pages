@@ -768,6 +768,14 @@ video {
   color: rgb(75 85 99 / var(--tw-placeholder-opacity));
 }
 
+.outline {
+  outline-style: solid;
+}
+
+.outline-main-blue {
+  outline-color: #1877f2;
+}
+
 .hover\:bg-main-blue-hover:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(22 111 229 / var(--tw-bg-opacity));
