@@ -29,7 +29,7 @@ const GameScreen = ({verifyLetter, pickedWord, pickedCategory, letters, guessedL
 
       <div className=' wordcontainer flex justify-center items-center ali m-10 p-2.5  border-8 border-yellow-500 '>
         {letters.map((letter,i) => guessedLetters.includes(letter)? 
-        (<span className='letter flex text-7xl border-4  border-black bg-white text-black p-1 h-24 w-24 uppercase justify-center items-center ' key={i}>{letter}, </span> ):
+        (<span className='letter flex text-7xl border-4  border-black bg-white text-black p-1 h-24 w-24 uppercase justify-center items-center ' key={i}>{letter} </span> ):
           
           (<span className='blackSquare flex text-7xl border-4  border-black bg-white text-black p-1 h-24 w-24 uppercase justify-center items-center ' key={i}></span>)
         )}
@@ -37,11 +37,11 @@ const GameScreen = ({verifyLetter, pickedWord, pickedCategory, letters, guessedL
         
       </div>
 
-      <div className='letterContainer my-1.5 '>
+      <div className='letterContainer  '>
         <p>Tente adivinhar uma letra da palavra:</p>
 
         <form className='flex items-center justify-center' onSubmit={handleSubmit}>
-          <input type="text" name='letter' maxLength={1} required  className='letter flex text-7xl border-4  border-black bg-white text-black p-1 h-24 w-24 uppercase justify-center items-center pl-6' onChange={(e)=>setLetter(e.target.value) }  value={letter} ref={letterInputRef}/>
+          <input type="text" name='letter' maxLength={1} required  className='letter flex text-5xl border-4  border-black bg-white text-black p-1 h-16 w-16 uppercase justify-center items-center pl-3 my-1.5 mx-2' onChange={(e)=>setLetter(e.target.value) }  value={letter} ref={letterInputRef}/>
           <button>Jogar!</button>
         </form>
       </div>
