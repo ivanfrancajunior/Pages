@@ -1,6 +1,20 @@
-import React from 'react'
+import React,{useState,useRef} from 'react'
 
 const GameScreen = ({verifyLetter, pickedWord, pickedCategory, letters, guessedLetters, wrongLetters, guesses, score }) => {
+
+  const [letter,setLetter] = useState('')
+  const letterInputRef = useRef(null)
+
+  const handleSubmit = (e) =>{
+    e.preventDefault();
+
+    verifyLetter(letter)
+    setLetter('')
+    letterInputRef.current.focus()
+
+    
+  }
+
   return (
     <div>
     
@@ -25,8 +39,9 @@ const GameScreen = ({verifyLetter, pickedWord, pickedCategory, letters, guessedL
 
       <div className='letterContainer my-1.5 '>
         <p>Tente adivinhar uma letra da palavra:</p>
-        <form className='flex items-center justify-center'>
-          <input type="text" name='letter' maxLength={1} required  className='letter flex text-7xl border-4  border-black bg-white text-black p-1 h-24 w-24 uppercase justify-center items-center pl-6'/>
+
+        <form className='flex items-center justify-center' onSubmit={handleSubmit}>
+          <input type="text" name='letter' maxLength={1} required  className='letter flex text-7xl border-4  border-black bg-white text-black p-1 h-24 w-24 uppercase justify-center items-center pl-6' onChange={(e)=>setLetter(e.target.value) }  value={letter} ref={letterInputRef}/>
           <button>Jogar!</button>
         </form>
       </div>

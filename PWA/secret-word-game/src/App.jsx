@@ -75,8 +75,9 @@ function App() {
     }
   
   //process the letter input
-  const verifyLetter =()=>{
-    setGameStage(stages[2].name)
+  const verifyLetter =(letter)=>{
+    console.log(letter)
+    //setGameStage(stages[2].name)
   }
   const retry =()=>{
     setGameStage(stages[0].name)
