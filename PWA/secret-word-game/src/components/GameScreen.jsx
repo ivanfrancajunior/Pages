@@ -50,7 +50,7 @@ const GameScreen = ({verifyLetter, pickedWord, pickedCategory, letters, guessedL
         <p>Letras já utilizadas:</p>
         {wrongLetters.map((letter,i)=>(<span key={i}>{letter}, </span>))}
       </div>
-      <button onClick={verifyLetter}>Finalizar</button>
+      
     </div>
   )
 }
