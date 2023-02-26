@@ -5,20 +5,19 @@ const GameScreen = ({verifyLetter}) => {
     <div>
     
       <div className='game'>
-        <p className='poins'> <span>Pontuação</span></p>
-        <h1>Adivinhe a palavra!</h1>
-        <h3>Dica sobre a palavra: <span>Dica...</span></h3>
+        <p className='points'> <span className='font-bold:'>Pontuação</span></p>
+        <h1 className='text-3xl'>Adivinhe a palavra!</h1>
+        <h3>Dica sobre a palavra: <span className='text-yellow-400'>Dica...</span></h3>
         
-        <button onClick={verifyLetter}>Finalizar</button>
       </div>
-      <div className='wordcontainer'>
-        <span className='letter'>Asadasdasds</span>
-        <span className='blackSquare'></span>
+      <div className=' wordcontainer flex justify-center items-center ali m-10 p-2.5  border-8 border-yellow-500 '>
+        <span className='letter flex text-7xl border-4  border-black bg-white text-black p-1 h-24 w-24 uppercase justify-center items-center '>A</span>
+        <span className='blackSquare flex text-7xl border-4  border-black bg-white text-black p-1 h-24 w-24 uppercase justify-center items-center '></span>
       </div>
-      <div className='letterContainer'>
+      <div className='letterContainer mb-1.5 '>
         <p>Tente adivinhar uma letra da palavra:</p>
-        <form>
-          <input type="text" name='letter' maxLength={1} required />
+        <form className='flex items-center justify-center'>
+          <input type="text" name='letter' maxLength={1} required  className=' h-24 w-24 font-bold flex justify-center items-center mr-2'/>
           <button>Jogar!</button>
         </form>
       </div>
@@ -27,6 +26,7 @@ const GameScreen = ({verifyLetter}) => {
         <span>a,</span>
         <span>b,</span>
       </div>
+      <button onClick={verifyLetter}>Finalizar</button>
     </div>
   )
 }
