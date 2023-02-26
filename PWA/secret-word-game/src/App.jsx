@@ -19,24 +19,33 @@ const stages = [
 
 function App() {
 
+  //area dos estágios do game (paginação)
   const [gameStage, setGameStage] = useState(stages[0].name);
   const [words] = useState(wordsList);
 
+  //area das letras escolhidas
   const [pickedWord, setPickedWord] = useState('');
   const [pickedCategory, setpPickedCategory] = useState('');
   const [letters, setLetters] = useState([]);
 
+  //area da dica x chances x pontuação
+  const [guessedLetters, setGuessedLetters] = useState([]);
+  const [wrongLetters, setWrongLetters] = useState([]);
+  const [guesses, setGuesses] = useState(5);
+  const [score, setScore] = useState(0);
+
   const pickWordAndCategory =()=>{
     //pega uma categoria aleatória
     const categories = Object.keys(words)
-
     const category = 
      categories[Math.floor(Math.random() * Object.keys(categories).length)]
     
     console.log(category)
+    
     //pega uma palavra aleatória
     const word = 
-     words[category][Math.floor(Math.random() * words[category].length)]
+    words[category][Math.floor(Math.random() * words[category].length)]
+    console.log(word)
 
      
      return {word, category}
@@ -47,23 +56,23 @@ function App() {
     
     //começa o game
     const startGame = ()=>{
-      const {word, category} = pickWordAndCategory()
-      console.log(word, category)
+      const {word, category} = pickWordAndCategory();
       
       //criando array de letras
-      let wordLetters = word.split('')
-      console.log(wordLetters)
+      let wordLetters = word.split('');
+      wordLetters = wordLetters.map((l) => l.toLowerCase()); // retarna tudo minuscolo ;)
 
-      wordLetters = wordLetters.map((letra) => letra.toLowerCase()) // retarna tudo minuscolo ;)
+      console.log(word, category);
+      console.log(wordLetters);
 
       //fill states
-      setPickedWord(word)
-      setpPickedCategory(category)
-      setLetters(letters)
+      setPickedWord(word);
+      setpPickedCategory(category);
+      setLetters(wordLetters);
 
 
-    setGameStage(stages[1].name)
-  }
+     setGameStage(stages[1].name)
+    }
   
   //process the letter input
   const verifyLetter =()=>{
@@ -80,7 +89,9 @@ function App() {
      
 
      {gameStage ==='start' && <StartScreen startGame={startGame}/>}
-     {gameStage ==='game' && <GameScreen verifyLetter={verifyLetter} />}
+
+     {gameStage ==='game' && <GameScreen verifyLetter={verifyLetter} pickedWord={pickedWord} pickedCategory={pickedCategory} letters={letters} guessedLetters={guessedLetters} wrongLetters={wrongLetters} guesses={guesses} score = {score} />}
+
      {gameStage ==='end' && <EndGameScreen retry={retry}/>}
     </div>
   )
