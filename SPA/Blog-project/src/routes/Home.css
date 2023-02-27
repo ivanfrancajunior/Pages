@@ -1,0 +1,31 @@
+.home h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem ;
+    padding-bottom:1.5rem ;
+    border-bottom: 1px solid #777;
+}
+.post h2, p {
+    margin-bottom: 1.5rem;
+}
+
+.post h2::first-letter {
+    text-transform: uppercase;
+}
+
+.btn{
+    color:rgb(43, 211, 43);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.btn:hover {
+    color: white;
+     
+}
