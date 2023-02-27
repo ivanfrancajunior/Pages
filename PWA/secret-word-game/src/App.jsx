@@ -40,12 +40,12 @@ function App() {
     const category = 
      categories[Math.floor(Math.random() * Object.keys(categories).length)]
     
-    console.log(category)
+    
     
     //pega uma palavra aleatória
     const word = 
     words[category][Math.floor(Math.random() * words[category].length)]
-    console.log(word)
+    
 
      
      return {word, category}
@@ -63,8 +63,7 @@ function App() {
       let wordLetters = word.split('');
       wordLetters = wordLetters.map((l) => l.toLowerCase()); // retarna tudo minuscolo ;)
 
-      console.log(word, category);
-      console.log(wordLetters);
+      
 
       //fill states
       setPickedWord(word);
@@ -96,7 +95,7 @@ function App() {
       }
       
     };
-    console.log(guessedLetters,wrongLetters)
+    
 
     const clearLetterStates = () =>{
       setGuessedLetters([])
