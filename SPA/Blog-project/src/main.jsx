@@ -7,6 +7,7 @@ import { createBrowserRouter,RouterProvider, Route  } from 'react-router-dom';
 //páginas
 import Home from './routes/Home';
 import NewPost from './routes/NewPost';
+import Gerenciar from './routes/Gerenciar';
 
 const router = createBrowserRouter ([
   {
@@ -19,6 +20,18 @@ const router = createBrowserRouter ([
       {
         path:'/new',
         element: <NewPost />
+      },
+      {
+        path:'/edit',
+        element: <Gerenciar />
+      },
+      {
+        path:'posts/edit-post/',
+        element: <Gerenciar />
+      },
+      {
+        path:'posts/delete-post/',
+        element: <Gerenciar />
       },
     ],
   },

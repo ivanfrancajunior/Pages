@@ -10,6 +10,7 @@ const Navbar = () => {
             <h2> <Link to={'/'}> Blog </Link></h2>
             <ul>
                 <li><Link to={'/'}> Home </Link></li>
+                <li ><Link to={'/edit'}> Gerenciar </Link></li>
                 <li className='new-btn'><Link to={'/new'}> Novo Post </Link></li>
             </ul>
         </nav>
