@@ -1,15 +1,23 @@
 #navbar{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding: 1rem 2rem;
     background-color: var(--teal);
+   
+}#anvbar h2{
+    align-items: center;
+    justify-content: center;
+
 }
+#navbar h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #navbar h2 a{
     background: var(--teal);
-    align-items: center;
-    display: flex;
-    gap: .5rem;
     
 }
 
@@ -34,6 +42,7 @@
     padding: .3rem;
     font-size: 1.3rem;
     align-items: center;
+    justify-content: center;
     cursor: pointer;  
 }
 #navbar form button:hover{
