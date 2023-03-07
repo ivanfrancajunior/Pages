@@ -1,0 +1,61 @@
+.container .title{
+    color:white;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem 0 1rem;
+}
+
+.title .query-text{
+    color:var(--teal)
+}
+
+.movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    
+    
+}
+
+.movies-container div{
+    width: 30%;
+    color: white;
+    margin-bottom: 2.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: black;
+
+}
+
+
+.movies-container div h2,
+.movies-container div img,
+.movies-container div p{
+    margin-bottom: .5rem;
+    background-color: black;
+}
+.movies-container div img{
+    max-width: 100%;
+}
+/*  */
+.movies-container div a{
+    border:none;
+    background-color: var(--teal);
+    border-radius: .4rem;
+    color:white;
+    padding: 1rem .5rem;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    
+}
+.movies-container div a:hover {
+    background-color:var(--main);
+    color: var(--bittersweet)  ;
+ }
