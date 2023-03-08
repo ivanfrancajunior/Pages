@@ -30,12 +30,12 @@ const getApiGithub = async () => {
         let project = document.createElement('div')
 
         project.innerHTML = `
-        <div class=' w-340px h-210px flex mt-2   border border-white rounded-lg flex-col items-center justify-center p-4 container'>
+        <div class=' w-340px h-210px flex mt-2   border border-gray-400 rounded-lg flex-col items-center justify-center p-4 container'>
 
            <div class= 'flex flex-col flex-wrap  items-center justify-between text-center text-sm '>
                
                 <a href="${item.html_url}" target="_blanc" class="m-2 ">${item.name.toUpperCase()}</a>
-                <p class="m-2"><span>🔵</span>${item.language}</p>
+                <p class="m-2"><span>🔵</span> ${item.language}</p>
                 <p class="m-2">${item.created_at}</p>
             </div>
 
