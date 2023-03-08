@@ -2,6 +2,21 @@ const githubProjects = document.querySelector("#projeto-lista");
 
 const url = "https://api.github.com/users/ivanfrancajunior/repos";
 
+const btn = document.querySelector('#swap')
+
+const body = document.body
+
+btn.addEventListener('click', () => {
+    if(document.documentElement.classList.contains('dark')){
+        document.documentElement.classList.remove('dark'); 
+        localStorage.setItem('theme', 'light')
+        return
+    }
+    document.documentElement.classList.add('dark');
+    localStorage.setItem('theme', 'dark')
+    console.log('clicou')
+});
+
 const getApiGithub = async () => {
     fetch(url)
    .then(async res =>{
