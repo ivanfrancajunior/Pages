@@ -543,3 +543,8 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
+.text-darkblue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(72 87 105 / var(--tw-text-opacity));
+}
