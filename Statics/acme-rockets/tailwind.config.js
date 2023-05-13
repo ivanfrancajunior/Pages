@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       screens: {
         'windescreen':{'raw':'(min-aspect-radio: 3/2)'},
-        'tallscreen':{'raw':'(min-aspect-radio: 16/20)'},
+        'tallscreen':{'raw':'(max-aspect-radio: 16/20)'},
   
       }
     },
