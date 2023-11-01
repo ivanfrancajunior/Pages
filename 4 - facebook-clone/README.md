@@ -1,10 +1,9 @@
-# LoopStudio - Projeto de Estúdio Digital com Tailwind CSS e JavaScript
+# Facebook login - Projeto de treino com página de login do facebook
 
-Este é um projeto de exemplo para criar um site de estúdio digital usando Tailwind CSS e JavaScript. O objetivo deste projeto é treinar e entender os conceitos e funcionalidades do Tailwind CSS e design responsivo.
+Este é um projeto de exemplo se trata de um clone da pagina de login do facebook.
+O objetivo deste projeto é treinar design responsivo.
 
 ## Recursos
-
-- **Página Inicial:** A página inicial apresenta informações gerais sobre o estúdio digital, como sua história, missão e visão.
 
 - **Design Responsivo:** Esta página de destino foi projetada com o Tailwind CSS para garantir que seja totalmente responsiva em vários dispositivos.
 
@@ -24,8 +23,7 @@ Se você deseja personalizar este projeto, siga estas etapas:
 
 ## Exemplo
 
-Você pode visualizar um exemplo desta página [aqui](https://loopstudiobyjota.vercel.app/).
-
+Você pode visualizar um exemplo desta página [aqui](https://jotafacebookclone.netlify.app/).
 
 ## Licença
 
