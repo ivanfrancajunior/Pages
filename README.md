@@ -17,12 +17,12 @@ Este é um exemplo de uma página estática que demonstra minhas habilidades em 
 - [PWA do Projeto 2](https://loopstudiobyjota.vercel.app/)
 
 
-Este é um exemplo de uma página estática que demonstra minhas habilidades em design web e desenvolvimento frontend, usando tailwind e js para pequenas interações com navbar. 
+Este é um exemplo de uma página estática que demonstra minhas habilidades em design web e desenvolvimento frontend, usando Tailwind CSS e js para pequenas interações com navbar. 
 
-### Projeto 3: Outra Página Estática
+### Projeto 3: Acme Rockets
 
-- [Repositório do Projeto 3](link_para_o_repositorio_do_projeto_3)
-- [Página do Projeto 3](link_para_a_página_do_projeto_3)
+- [Repositório do Projeto 3](./3%20-%20Acme%20Rockets/)
+- [Página do Projeto 3](https://acmerocketsbyjota.netlify.app)
 
 Mais um exemplo de uma página estática, demonstrando minha versatilidade no design web.
 
