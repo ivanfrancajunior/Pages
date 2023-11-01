@@ -34,4 +34,8 @@ Você pode visualizar um exemplo desta página de login do Spotify clonada [aqui
 Se você deseja contribuir para melhorar este clone da página de login do Spotify, sinta-se à vontade para abrir um problema ou enviar uma solicitação de pull request.
 
 
+## Licença
 
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
+
+Feito com ❤️ por [Ivan Jr.](https://github.com/ivanfrancajunior)
