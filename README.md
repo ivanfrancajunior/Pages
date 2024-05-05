@@ -14,7 +14,7 @@ Este é um exemplo de uma página estática que demonstra minhas habilidades em 
 ### Projeto 2: LoopStudio
 
 - [Repositório do Projeto 2](./2%20-%20loopStudio/)
-- [PWA do Projeto 2](https://jota-loopstudio.netlify.app/)
+- [Página do Projeto 2](https://jota-loopstudio.netlify.app/)
 
 
 Este é um exemplo de uma página estática que demonstra minhas habilidades em design web e desenvolvimento frontend, usando Tailwind CSS e js para pequenas interações com navbar. 
