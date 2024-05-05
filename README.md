@@ -24,14 +24,6 @@ Este é um exemplo de uma página estática que demonstra minhas habilidades em 
 - [Repositório do Projeto 3](./3%20-%20Acme%20Rockets/)
 - [Página do Projeto 3](https://jota-acmerockets.netlify.app)
 
-Mais um exemplo de uma página estática, demonstrando minha versatilidade no design web.
-### Projeto 4: Facebook Clone
-
-- [Repositório do Projeto 3](./4%20-%20facebook-clone/)
-- [Página do Projeto 4](https://jotafacebookclone.netlify.app/)
-
-Mais um exemplo de uma página estática, demonstrando minha versatilidade no design web.
-
 ## Instruções de Uso
 
 1. Escolha um projeto da lista acima.
