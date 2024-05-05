@@ -14,7 +14,7 @@ Este é um exemplo de uma página estática que demonstra minhas habilidades em 
 ### Projeto 2: LoopStudio
 
 - [Repositório do Projeto 2](./2%20-%20loopStudio/)
-- [PWA do Projeto 2](https://loopstudiobyjota.vercel.app/)
+- [PWA do Projeto 2](https://jota-loopstudio.netlify.app/)
 
 
 Este é um exemplo de uma página estática que demonstra minhas habilidades em design web e desenvolvimento frontend, usando Tailwind CSS e js para pequenas interações com navbar. 
@@ -22,7 +22,7 @@ Este é um exemplo de uma página estática que demonstra minhas habilidades em 
 ### Projeto 3: Acme Rockets
 
 - [Repositório do Projeto 3](./3%20-%20Acme%20Rockets/)
-- [Página do Projeto 3](https://acmerocketsbyjota.netlify.app)
+- [Página do Projeto 3](https://jota-acmerockets.netlify.app)
 
 Mais um exemplo de uma página estática, demonstrando minha versatilidade no design web.
 ### Projeto 4: Facebook Clone
